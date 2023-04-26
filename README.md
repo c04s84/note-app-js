@@ -1,2 +1,3 @@
 # note-app-js
-basic note taking app with nodeJS
+basic note taking app using nodeJS
+

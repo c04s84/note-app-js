@@ -21,7 +21,6 @@ yargs.command({
     },
     handler (argv){
         noteUtils.addNote(argv.title, argv.body)
-        // console.log("this is the sudo function for adding note")
         console.log("Adding Note Title: ", argv.title)
         console.log("Adding Note Body: ", argv.body)
     }
@@ -40,8 +39,6 @@ yargs.command({
     },
     handler(argv){
         noteUtils.removeNote(argv.title)
-        // console.log("this is the sudo function for removing note")
-        // console.log("Removing Note Title: ", argv.title)
     }
 })
 
@@ -50,7 +47,6 @@ yargs.command({
     describe: "listing the note",
     handler(){
         noteUtils.listNote()
-        console.log("This is the sudo function for listing note")
     }
 })
 
@@ -66,8 +62,6 @@ yargs.command({
     },
     handler(argv){
         noteUtils.readNote(argv.title)
-        // console.log(argv.title)
-        console.log("This is the sudo function for reading note")
     }
 })
     
